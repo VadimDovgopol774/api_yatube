@@ -1,7 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 
-MAX_LENGTH=200
+MAX_LENGTH = 200
 
 User = get_user_model()
 
