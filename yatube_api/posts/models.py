@@ -1,13 +1,15 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 
+MAX_LENGTH=200
+
 User = get_user_model()
 
 
 class Group(models.Model):
     """Группы."""
 
-    title = models.CharField(max_length=200)
+    title = models.CharField(MAX_LENGTH=200)
     slug = models.SlugField(unique=True)
     description = models.TextField()
 
